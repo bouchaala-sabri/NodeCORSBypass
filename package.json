@@ -1,0 +1,29 @@
+{
+  "name": "NodeCORSBypass",
+  "version": "1.0.0",
+  "description": "A simple Node.js app to bypass CORS restrictions for development purposes.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bouchaala-sabri/NodeCORSBypass.git"
+  },
+  "keywords": [
+    "CORS",
+    "proxy",
+    "Node.js"
+  ],
+  "author": "Your Name <bouchaala.sabri@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bouchaala-sabri/NodeCORSBypass/issues"
+  },
+  "homepage": "https://github.com/bouchaala-sabri/NodeCORSBypass#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
