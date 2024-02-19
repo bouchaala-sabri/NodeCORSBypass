@@ -12,7 +12,14 @@ app.get('/:url', async (req, res) => {
         const response = await axios.get(url);
         res.send(response.data);
     } catch (error) {
-        res.status(500).send({ error: 'Error fetching url' });
+        res.status(500).send({ 
+            message: 'Error fetching url',
+            error: {
+                message: error.message,
+                stack: error.stack,
+                config: error.config
+            }
+        });
     }
 });
 
