@@ -9,7 +9,11 @@ app.use(cors());
 app.get('/:url', async (req, res) => {
     try {
         const url = req.params.url;
-        const response = await axios.get(url);
+        const response = await axios.get(url, {
+            headers: {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36'
+            }
+        });
         res.send(response.data);
     } catch (error) {
         res.status(500).send({ 
@@ -22,6 +26,7 @@ app.get('/:url', async (req, res) => {
         });
     }
 });
+
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Server running on port ${port}`));
