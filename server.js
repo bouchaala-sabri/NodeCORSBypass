@@ -1,8 +1,11 @@
 const express = require('express');
+const cors = require('cors');
 const axios = require('axios');
 const cheerio = require('cheerio');
 
 const app = express();
+
+app.use(cors());
 
 app.get('/:url', async (req, res) => {
     try {
