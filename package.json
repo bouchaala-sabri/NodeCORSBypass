@@ -15,7 +15,7 @@
     "proxy",
     "Node.js"
   ],
-  "author": "Your Name <bouchaala.sabri@gmail.com>",
+  "author": "Sabri Bouchaala <bouchaala.sabri@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bouchaala-sabri/NodeCORSBypass/issues"
@@ -24,6 +24,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "cheerio": "^1.0.0-rc.12"
   }
 }
